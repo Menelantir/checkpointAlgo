@@ -1,0 +1,29 @@
+ALGORITHM checkpointAlgo
+VAR
+    ch : CHAR
+    countC : INTEGER := 0;
+    countW : INTEGER := 0;
+    countV : INTEGER := 0;
+BEGIN
+WHILE (ch<>".") DO
+    IF (ch<> " ") THEN
+        countC ++;
+    ELSE_IF (ch = " ") THEN
+        countW ++;
+    ELSE_IF
+        (ch = "a" OR "i" OR "o" OR "u" OR "y" OR "e") THEN
+        countV ++;
+    END_IF
+END_WHILE
+
+    Write ("Number of characters = ",countC);
+    Write ("Number of words = ",countW);
+    Write ("Number of vowels = ",countV);
+
+
+
+
+
+
+
+
